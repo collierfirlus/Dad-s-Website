@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+}
+
+/*NAVBAR*/
+nav {
+  overflow: hidden;
+  /*Make nav fixed at top*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /*Styling*/
+  background-color: #585B5E;
+  box-shadow: 0px 2px 5px grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a {
+  background-color: #72818E;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 14px 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/*On hover*/
+nav a:hover {
+  background-color: #6c6f72;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 600px) {
+  #home1 {
+    display: none;
+  }
+  nav {
+    justify-content: start;
+    flex-direction: column;
+  }
+  .nav-left {
+    flex-direction: column;
+  }
+}
