@@ -5,32 +5,33 @@ body {
 /*NAVBAR*/
 nav {
   overflow: hidden;
-  /*Make nav fixed at top*/
   position: fixed;
   top: 0;
   width: 100%;
-
-  /*Styling*/
-  background-color: #585B5E;
-  box-shadow: 0px 2px 5px grey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  background-color: #585B5E;
+  box-shadow: 0px 2px 5px grey;
 }
 
 nav a {
+  display: flex;
+
+  align-content: center;
+  justify-content: center;
+  padding: 14px 16px;
+
   background-color: #72818E;
   color: #fff;
+
   text-align: center;
   text-decoration: none;
   font-size: 18px;
-  padding: 14px 16px;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
-  display: flex;
-  align-content: center;
-  justify-content: center;
 }
 
 /*On hover*/
@@ -54,4 +55,16 @@ nav a:hover {
   .nav-left {
     flex-direction: column;
   }
+  #BrickRoof {
+    
+  }
+}
+
+/*Else*/
+#BrickRoof {
+  margin-top: 25px;
+  overflow: hidden;
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
 }
