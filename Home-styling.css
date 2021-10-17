@@ -1,6 +1,8 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /*NAVBAR*/
@@ -82,7 +84,7 @@ nav a:hover {
 .footer-container {
   background-color: #585B5E;
   padding: 4rem;
-  
+  /*TODO: make footer appear at bottom*/
 }
 .footer {
   color: #fff;
@@ -92,7 +94,6 @@ nav a:hover {
 }
 .footer-heading-about {
   display: flex;
-  
 }
 .footer a {
   color: #fff;
